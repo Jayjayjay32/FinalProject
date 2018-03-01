@@ -8,25 +8,34 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="TextView!"
         android:textColor="@android:color/black"
         android:textSize="32sp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="64sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="0dp"
+        android:onClick="ActivityButton"
         android:text="Button!"
         android:textColor="@android:color/black"
         android:textSize="32sp" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@id/button"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
         android:layout_below="@id/textView"
         android:background="@drawable/imageview" />
 </RelativeLayout>
